@@ -2,6 +2,6 @@ body {
 	max-width: 1024px;
 	margin: 0;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
-	border-image: url(../images/oshushi.jpg);
+	background-image: url(../images/oshushi.jpg);
 	background-repeat: repeat;
 }
