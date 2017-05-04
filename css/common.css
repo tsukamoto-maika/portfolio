@@ -5,3 +5,7 @@ body {
 	background-image: url(../images/onigiri.jpg);
 	background-repeat: repeat;
 }
+
+h1 {
+	margin: 30px;
+}
