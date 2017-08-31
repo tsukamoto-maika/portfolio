@@ -1,183 +1,38 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>リラックススペースで読書に耽ろう | Bücherwurm TOP</title> 
-    	<link href="./css/common.css" rel="stylesheet" type="text/css">		
-		<link rel="stylesheet" type="text/css" href="./css/slick.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="./css/slick-theme.css" media="screen" />	
-	</head>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="./js/slick.min.js"></script>	
-	<script>
-		$(function() {
-			$('.slider').slick({
-				autoplay: true,
-				autoplaySpeed: 2500,
-				dots: true,
-				prevArrow: true,
-				nextArrow:true,
-				speed: 1500,
-			});
-		});
-	</script>
-	<script>
-		//■page topボタン
-		$(function(){
-			var topBtn=$('#pageTop');
-			topBtn.hide();
-			//◇ボタンの表示設定
-			$(window).scroll(function(){
-				if($(this).scrollTop()>80){
-				//---- 画面を80pxスクロールしたら、ボタンを表示する
-				topBtn.fadeIn();
-				}else{
-				//---- 画面が80pxより上なら、ボタンを表示しない
-				topBtn.fadeOut();
-				} 
-			});
-			// ◇ボタンをクリックしたら、スクロールして上に戻る
-			topBtn.click(function(){
-			$('body,html').animate({
-			scrollTop: 0},1500);
-			return false;
-			});
-		});
-	</script>
-	<body>
-		<div class="wrapper">
-			<header>
-				<div id="logo-area">
-					<h1><a href="#"><img src="./images/logo.svg" alt="お店のロゴ"/ width="200px" height="100px"></a></h1>
-				</div>
-				<nav>
-					<div id="header-navi" class="clear">
-						<ul> 
-							<li><a href="./index.html">TOP</a></li>
-							<li><a href="#">CONCEPT</a></li>
-							<li><a href="#">NEWS</a></li>
-							<li><a href="#">ROUNGE</a></li>
-							<li><a href="#">BOOK</a></li>
-							<li><a href="#">FOOD</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-			<div id="main-area">
-			  <div class="slider">
-					<div><img src="./images/eyecatch_1.png" alt="アイキャッチ"/></div>
-					<div><img src="./images/eyecatch_2.png" alt="アイキャッチ"/></div>
-					<div><img src="./images/eyecatch_3.png" alt="アイキャッチ"/></div>
-				</div>
-                <section>
-                  <div class="contents">
-                    <h2><p>CONCEPT</p></h2>
-                    <p>
-                      わたしたちは"読書に耽ろう"をコンセプトに、<br />ゆったり空間、おいしい食事で<br />「読書に耽る幸せな時間をお届けしたい」<br />そんな思いでお店を始めました。<br />Bücherwurmで<br /> 「ちょっぴりリッチな読書時間」始めてみませんか？
-                      </p>
-                    </div>
-                </section>
-                <section>
-                  <div class="contents">
-                    <h2><p>NEWS</p></h2>
-                    <dl>
-                      <dt>yyyymmdd</dt>
-                      <dd>おしらせ</dd>
-                      <dt>yyyymmdd</dt>
-                      <dd>おしらせ</dd>
-                      <dt>yyyymmdd</dt>
-                      <dd>おしらせ</dd>
-                      <dt>yyyymmdd</dt>
-                      <dd>おしらせ</dd>
-                      </dl>
-                    </div>
-                </section>
-              <section>
-				<div class="clear">
-					<div id="pickup">
-						<!--ピックアップコンテンツ上部-->
-						<div class="pickup-background-green">
-							<a href="#"><p>ROUNGE</p></a>
-						</div>
-						<div>
-							<a href="#"><img src="./images/rounge4_resize.jpg" alt="ピックアップコンテンツ　ラウンジ">
-							</a>
-						</div>
-						<div class="pickup-background-green">
-							<a href="#"><p>BOOK</p></a>
-						</div>
-						<div>
-							<a href="#"><img src="./images/book_resize.jpg" alt="ピックアップコンテンツ　BOOK"></a>
-						</div>
-						<!--ピックアップコンテンツ下部-->
-						<div>
-							<a href="#"><img src="./images/food2_resize.jpg" alt="ピックアップコンテンツ　FOOD">
-							</a>
-						</div>
-						<div class="pickup-background-brown">
-							<a href="#"><p>FOOD</p></a>
-						</div>
-						<div>
-							<a href="#"><img src="./images/coffee_resize.jpg" alt="ピックアップコンテンツ　予約"></a>
-						</div>
-						<div class="pickup-background-brown">
-							<a href="#"><p>RESERVE</p></a>
-						</div>
-					</div>
-				</div>
-              </section>
-              <section>
-				<div id="shop-info">
-					<h2><p>SHOPINFO</p></h2>
-					<ul>
-						<li>お店の名前：Bücherwurm</li>
-						<li>住所：東京都A区B町123-45 素敵なビルの1F</li>
-						<li>電話番号：0312345678</li>
-						<li>営業時間：07:00-23:00(L.O.22:30)</li>
-					</ul>
-					<div>
-						<p><a href="#">ご予約はこちら</a></p>
-					</div>
-				</div>
-              </section>
-			  <section>
-				<img src="./images/map.png" width="1024" height="400" alt="お店の地図"/>
-			  </section>
-			  <div class="top_move" id="pageTop">
-				<a href="#">
-					<img src="./images/page_top_icon.svg" alt="page_top">
-				</a>
-			  </div>   
+<head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="././css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+	<title>大急ぎで作ったtsukamoto.design</title>
+</head>
+<body>
+<div id="wrapper">
+	<div>
+		<h1>超簡易版トップ</h1>
+		<p>簡易版につき、デザイン等はまるで無視...</p>
+	</div>
+	<div class="contents">
+		<div>
+			<div class="image-area">
+				<a href="././port01/index.html" target="_blank"><img src="././img/first.png" /></a>
+			</div>
+			<div class="text-area">
+				<h2>カフェのサイト</h2>
 			</div>
 		</div>
-		<footer>
-			<div class="wrapper">
-				<div id="footer-sns">
-					<a href="#"><img src="./images/Facebook_logo.svg" alt="Facebook_logo"></a>
-					<a href="#"><img src="./images/twitter_logo.svg" alt="twitter_logo"></a>
-					<a href="#"><img src="./images/insta_logo.svg" alt="instagram_logo"></a>
-				</div>
-				<div class="clear">
-				<div id="footer-nav">
-						<ul>
-							<li><a href="./index.html">TOP</a></li>
-							<li><a href="#">CONCEPT</a></li>
-							<li><a href="#">NEWS</a></li>
-							<li><a href="#">ROUNGE</a></li>
-							<li><a href="#">BOOK</a></li>
-							<li><a href="#">FOOD</a></li>
-						</ul>
-					</div>
-				</div>  
-				<div id="footer-shopinfo" class="clear">
-					<ul>
-						<li><p>Bücherwurm</p></li>
-						<li><p>TEL：03-1234-5678</p></li>
-						<li><p>OPEN：07:00-23:00(L.O.22:30)</p></li>
-					</ul>
-				</div>
+		<div>
+			<div class="image-area">
+				<a href="././port02/index.html" target="_blank"><img src="././img/second.png" /></a>
 			</div>
-		</footer>
-	</body>
+			<div class="text-area">
+				<h2>病院のサイト（リニューアルのイメージで）</h2>
+				<a href="http://www.koga-c-hp.or.jp/" target="_blank">元ネタ</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 </html>
