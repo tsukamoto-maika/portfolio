@@ -99,9 +99,6 @@ header .category {
 	font-size: 16px;
 	display: inline-block;
 }
-.navi {
-	max-height: 160px;
-}
 .header_logo_area {
 	margin: 40px 0 24px;
 	text-align: center;
@@ -140,6 +137,18 @@ header .category {
 .navi ul li:last-child {
 	margin-right: 0;
 }
+@media screen and (max-width:1024px) {
+	.header_logo_area {
+    margin: 24px 0 24px;
+    text-align: center;
+	}
+	.header_logo_area img {
+    width: 72px;
+	}
+	.navi ul li {
+		font-size: 24px;
+	}
+}
 /* フッター */
 footer {
 	padding: 24px 0 0;
@@ -160,9 +169,8 @@ footer ul li img {
 footer small {
 	display: block;
 	padding: 16px 0;
-	margin-top: 24px;
 	font-size: 8px;
-	color: #fff;
+	color: #555;
 	text-align: center;
 }
 /* TOP */
