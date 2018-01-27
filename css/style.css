@@ -141,11 +141,16 @@ header .category {
 	margin-right: 0;
 }
 /* フッター */
+@media screen and (min-width:1025px) {
+	footer {
+		margin: 80px -1000px 0;
+	}
+}
 footer {
 	background-color: #eee;
 	padding: 24px 0 0;
-	margin: 80px -1000px 0;
 }
+
 footer ul li a {
 	transition: all .3s ease;
 }
