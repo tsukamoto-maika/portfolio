@@ -27,6 +27,18 @@ outline: none;
 	padding: 0 56px;
 	height: 100%;
 }
+@media screen and (max-width: 599px) {
+	.container {
+		padding: 0 32px;
+		height: 100%;
+	}
+	p, dl, dt, dd, ol, ul, li, th, td {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+
+}
 /* 共通のパーツ  */
 h1.title_parts, h2.title_parts, h3.title_parts, h4.title_parts, h5.title_parts, h6.title_parts {
 	font-feature-settings : "palt";
@@ -48,11 +60,6 @@ h5.title_parts {
 }
 h6.title_parts {
 	font-size: 8px;
-}
-@media screen and (max-width:1024px) {
-	h1.title_parts, h2.title_parts, h3.title_parts, h4.title_parts, h5.title_parts, h6.title_parts {
-		font-size: 200%;
-	}
 }
 .candal {
 	font-family: 'Candal';
@@ -94,6 +101,34 @@ h6.title_parts {
 .first_view {
 	height: 100%;
 	position: relative;
+}
+@media screen and (max-width: 599px) {
+	h1.title_parts {
+		font-size: 44.8px;
+	}
+	h2.title_parts {
+		font-size: 32px;
+	}
+	h3.title_parts {
+		font-size: 25.6px;
+	}
+	h4.title_parts {
+		font-size: 19.2px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	h1.title_parts {
+		font-size: 50.4px;
+	}
+	h2.title_parts {
+		font-size: 36px;
+	}
+	h3.title_parts {
+		font-size: 28.8px;
+	}
+	h4.title_parts {
+		font-size: 21.6px;
+	}
 }
 
 /* ヘッダー */
@@ -142,18 +177,23 @@ header .category {
 .navi ul li:last-child {
 	margin-right: 0;
 }
-@media screen and (max-width:1024px) {
-	.header_logo_area {
-    margin: 24px 0 24px;
-    text-align: center;
-	}
+@media screen and (max-width: 599px) {
 	.header_logo_area img {
-    width: 72px;
+		width: 64px;
 	}
 	.navi ul li {
-		font-size: 200%;
+		margin-right: 24px;
+	}
+	.navi ul li a {
+		padding: 8px 24px;
 	}
 }
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.navi ul li {
+		font-size: 16px;
+	}
+}
+
 /* フッター */
 footer {
 	padding: 24px 0 0;
@@ -177,6 +217,24 @@ footer small {
 	font-size: 8px;
 	color: #555;
 	text-align: center;
+}
+@media screen and (max-width: 599px) {
+	footer .flex_box {
+		display: flex;
+		justify-content: center;
+	}
+	footer small {
+		font-size: 12px;
+	}s
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	footer .flex_box {
+		display: flex;
+		justify-content: center;
+	}
+	footer small {
+		font-size: 12px;
+	}
 }
 /* TOP */
 .scroll {
@@ -250,6 +308,16 @@ footer small {
 .section_1 .top_introduction {
 	font-size: 24px;
 }
+@media screen and (max-width: 599px) {
+	.section_1 #canvas {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.section_1 #canvas {
+		width: 100%;
+	}
+}
 .section_2,
 .section_3 {
 	height: 100%;
@@ -268,10 +336,76 @@ footer small {
 .section_3 .contents_area .flex_box a div {
 	padding: 120px 64px;
 }
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.section_3 .contents_area .flex_box a div {
+		padding: 100px 64px;
+	}
+}
 .section_4 .contents_area .flex_box {
 	justify-content: center;
 }
+@media screen and (max-width: 599px) {
+	.section_4 .contents_area .flex_box {
+		text-align: center;
+	}
+	.section_4 .contents_area .flex_box img {
+		width: 100px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.section_4 .contents_area .flex_box {
+		text-align: center;
+	}
+	.section_4 .contents_area .flex_box img {
+		width: 180px;
+	}
+}
 /* セクション2、セクション3、セクション4共通 */
+@media screen and (max-width: 599px) {
+	.flex_box {
+		display: block;
+		margin: 0 auto;
+	}
+	.contents_area .flex_box a div {
+		margin-bottom: 40px;
+	}
+	.section_2,
+	.section_3 {
+		height: auto;
+	}
+	.section_2>.scroll,
+	.section_3>.scroll {
+		display: none;
+	}
+	.section_2 .title_area,
+	.section_3 .title_area,
+	.section_4 .title_area {
+		padding: 120px 0 40px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.flex_box {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+	}
+	.contents_area .flex_box a div {
+		margin-bottom: 40px;
+	}
+	.section_2,
+	.section_3 {
+		height: auto;
+	}
+	.section_2>.scroll,
+	.section_3>.scroll {
+		display: none;
+	}
+	.section_2 .title_area,
+	.section_3 .title_area,
+	.section_4 .title_area {
+		padding: 120px 0 40px;
+	}
+}
 .title_area {
 	text-align: center;
 	padding: 40px 0 40px;
@@ -330,18 +464,6 @@ footer small {
 	color: #fff;
 	transition: all .3s ease;
 }
-/* スマホ */
-@media screen and (max-width: 667px) {
-	p {
-		color: red;
-	}
-}
 
-/* タブレット */
-@media screen and (min-width: 668px) and (max-width: 1024px) {
-	p {
-		color: blue;
-	}
-}
 
 /* WORKS */
