@@ -177,6 +177,13 @@ header .category {
 .navi ul li:last-child {
 	margin-right: 0;
 }
+.navi ul li.active {
+	background-color: #ac0000;
+	border-color: #ac0000;
+}
+.navi ul li.active a {
+	color: #fff;
+}
 @media screen and (max-width: 599px) {
 	.header_logo_area img {
 		width: 64px;
@@ -199,7 +206,6 @@ footer {
 	padding: 24px 0 0;
 	margin-top: 40px;
 }
-
 footer ul li a {
 	transition: all .3s ease;
 }
@@ -468,5 +474,151 @@ footer small {
 	transition: all .3s ease;
 }
 
-
 /* WORKS */
+.works_list .title_area {
+	text-align: center;
+	padding: 96px 0;
+}
+.works_list .contents_area>.flex_box {
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+	margin-bottom: 56px;
+}
+.works_list .contents_area .flex_box .image_area {
+	flex-basis: 45%;
+	margin-right: 5%;
+}
+.works_list .contents_area .flex_box .detail_area {
+	flex-basis: 50%;
+}
+.works_list .contents_area .flex_box a div {
+	padding: 56px;
+}
+.works_list .contents_area .flex_box .works_image {
+	width: 100%;
+}
+.works_list .contents_area .flex_box .works_image.sp_image {
+	width: 50%;
+}
+.works_list .contents_area .detail_area .title_parts {
+	color: #555;
+	font-weight: bold;
+}
+.works_list .contents_area .detail_area .title_parts .subtitle {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+.works_list .contents_area .detail_area>ul.detail {
+	width: 85%;
+}
+.works_list .contents_area .detail_area ul {
+	margin-top: 32px;
+}
+.works_list .contents_area .detail_area ul li {
+	margin-top: 16px;
+}
+.works_list .contents_area .detail_area .flex_box {
+	justify-content: baseline;
+}
+.works_list .contents_area .detail_area .step {
+	margin-top: 16px;
+}
+.works_list .contents_area .detail_area .keyword {
+	margin-top: 8px;
+}
+.works_list .contents_area .detail_area .step li,
+.works_list .contents_area .detail_area .keyword li {
+  border-radius: 25px;
+	padding: 4px 16px;
+  margin-right: 16px;
+	margin-top: 8px;
+  font-size: 8px;
+	text-align: center;
+}
+.works_list .contents_area .detail_area .step li {
+	border: none;
+	background-color: #eee;
+}
+.works_list .contents_area .detail_area .step li {
+	width: 15%;
+}
+.works_list .contents_area .detail_area .keyword li {
+	border: solid 1px #55acee;
+	color: #55acee;
+}
+.works_list .contents_area .detail_area ul li h3 {
+	font-weight: bold;
+}
+.works_list .contents_area .detail_area .title_parts .subtitle.client_work_color {
+	color: #e57373;
+}
+.works_list .contents_area .detail_area .title_parts .subtitle.private_work_color {
+	color: #fbc02d;
+}
+.works_list .contents_area .detail_area .title_parts .subtitle.private_activity_color {
+	color: #64b5f6;
+}
+.works_list .contents_area .client_work .detail_area ul li h3 {
+	color: #e57373;
+}
+.works_list .contents_area .private_work .detail_area ul li h3 {
+	color: #fbc02d;
+}
+.works_list .contents_area .private_activity .detail_area ul li h3 {
+	color: #64b5f6;
+}
+.works_list .contents_area .detail_area .step li.active {
+		color: #fff;
+}
+.works_list .contents_area .client_work .detail_area .step li.active {
+	background-color: #e57373;
+}
+.works_list .contents_area .private_work .detail_area .step li.active {
+	background-color: #fbc02d;
+}
+.works_list .contents_area .private_activity .detail_area .step li.active {
+	background-color: #55acee;
+}
+@media screen and (max-width: 599px) {
+	.works_list .title_area {
+		padding: 80px 0 40px;
+	}
+	.works_list .contents_area>.flex_box {
+		margin-bottom: 40px;
+	}
+	.works_list .contents_area .flex_box a div {
+		padding: 40px;
+	}
+	.works_list .contents_area .flex_box a div {
+		margin-bottom: 16px;
+	}
+	.works_list .contents_area .detail_area>ul.detail {
+		width: 100%;
+	}
+	.works_list .contents_area .detail_area .step li {
+		width: auto;
+	}
+
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+	.works_list .contents_area>.flex_box {
+		display: block;
+		margin: 0 auto 56px;
+		width: 90%;
+	}
+	.works_list .contents_area>.flex_box .flex_box {
+		display: flex;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.works_list .contents_area .flex_box .image_area {
+	    flex-basis: 40%;
+	    margin-right: 3%;
+	}
+	.works_list .contents_area .flex_box .detail_area {
+    flex-basis: 55%;
+	}
+}
+/* SKILL */
