@@ -29,7 +29,7 @@ outline: none;
 }
 @media screen and (max-width: 599px) {
 	.container {
-		padding: 0 32px;
+		padding: 0 40px;
 		height: 100%;
 	}
 	p, dl, dt, dd, ol, ul, li, th, td {
@@ -182,10 +182,10 @@ header .category {
 		width: 64px;
 	}
 	.navi ul li {
-		margin-right: 24px;
+		margin-right: 16px;
 	}
 	.navi ul li a {
-		padding: 8px 24px;
+		padding: 8px 16px;
 	}
 }
 @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -309,6 +309,9 @@ footer small {
 	font-size: 24px;
 }
 @media screen and (max-width: 599px) {
+	.scroll {
+		bottom: 10%;
+	}
 	.section_1 #canvas {
 		width: 100%;
 	}
