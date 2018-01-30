@@ -360,9 +360,72 @@ footer small {
     transform: translateY(0);
   }
 }
-
 .scroll_none {
   display: none;
+}
+
+.title_area {
+  text-align: center;
+  padding: 40px 0 40px;
+}
+
+.title_area .summary {
+  display: block;
+  margin-top: 16px;
+}
+
+.contents_area {
+  height: 100%;
+}
+
+.contents_area .flex_box {
+  justify-content: space-between;
+}
+.contents_area .flex_box a:hover {
+  opacity: 0.3;
+  transition: all .3s ease;
+}
+
+.contents_area .flex_box a div {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.contents_area .flex_box h2.title_parts, .contents_area .flex_box .subtitle {
+  color: #fff;
+}
+
+.contents_area .flex_box h2.title_parts {
+  font-size: 24px;
+}
+
+.contents_area .flex_box .subtitle {
+  display: block;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.contents_area .flex_box .works_image {
+  width: 200px;
+}
+
+.contents_area .button_parts {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: solid 3px #c00;
+  border-radius: 5px;
+  padding: 16px 70px;
+  margin: 40px auto 0;
+  font-size: 16px;
+  color: #c00;
+  transition: all .3s ease;
+}
+
+.contents_area .button_parts:hover {
+  background-color: #c00;
+  color: #fff;
+  transition: all .3s ease;
 }
 
 .section_1 {
@@ -431,6 +494,10 @@ footer small {
 .section_2 .contents_area .flex_box .private_activity_box .works_image {
 	width: 80px;
 }
+.section_2 .contents_area .flex_box a {
+	transition: all .3s ease;
+  width: 300px;
+}
 .section_2 .contents_area .flex_box a.flex_box {
 	justify-content: center;
 	align-items: center;
@@ -445,10 +512,12 @@ footer small {
 
 .section_3 .contents_area .flex_box a {
   margin: auto 40px;
+	transition: all .3s ease;
+  width: 300px;
 }
 
 .section_3 .contents_area .flex_box a div {
-  padding: 120px 64px;
+  padding: 120px 0;
 }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -498,6 +567,11 @@ footer small {
   .section_2 .title_area, .section_3 .title_area, .section_4 .title_area {
     padding: 120px 0 40px;
   }
+	.section_2 .contents_area .flex_box a,
+	.section_3 .contents_area .flex_box a {
+	  transition: all .3s ease;
+	  width: auto;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
@@ -519,78 +593,6 @@ footer small {
     padding: 120px 0 40px;
   }
 }
-
-.title_area {
-  text-align: center;
-  padding: 40px 0 40px;
-}
-
-.title_area .summary {
-  display: block;
-  margin-top: 16px;
-}
-
-.contents_area {
-  height: 100%;
-}
-
-.contents_area .flex_box {
-  justify-content: space-between;
-}
-
-.section_2 .contents_area .flex_box a,
-.section_3 .contents_area .flex_box a {
-  transition: all .3s ease;
-  width: 300px;
-}
-
-.contents_area .flex_box a:hover {
-  opacity: 0.3;
-  transition: all .3s ease;
-}
-
-.contents_area .flex_box a div {
-  padding: 32px;
-  text-align: center;
-}
-
-.contents_area .flex_box h2.title_parts, .contents_area .flex_box .subtitle {
-  color: #fff;
-}
-
-.contents_area .flex_box h2.title_parts {
-  font-size: 24px;
-}
-
-.contents_area .flex_box .subtitle {
-  display: block;
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-.contents_area .flex_box .works_image {
-  width: 200px;
-}
-
-.contents_area .button_parts {
-  display: block;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: solid 3px #c00;
-  border-radius: 5px;
-  padding: 16px 80px;
-  margin: 40px auto 0;
-  font-size: 16px;
-  color: #c00;
-  transition: all .3s ease;
-}
-
-.contents_area .button_parts:hover {
-  background-color: #c00;
-  color: #fff;
-  transition: all .3s ease;
-}
-
 
 /* 下層ページ共通 */
 
