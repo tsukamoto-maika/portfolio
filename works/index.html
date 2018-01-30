@@ -9,31 +9,29 @@
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
-  <title>ABOUT | TSUKAMOTO.design</title>
+  <title>WORKS | TSUKAMOTO.design</title>
 </head>
 
 <body>
   <div id="wrapper">
     <div class="container">
       <nav class="navi">
-        <h1 class="header_logo_area"><img src="../img/icon.svg" alt=""></h1>
+        <h1 class="header_logo_area"><a href="../index.html"><img src="../img/icon.svg" alt=""></a></h1>
         <ul class="candal">
-          <li class="active"><a href="#">WORKS</a></li>
-          <li><a href="#">SKILLS</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li class="active"><a href="../works/index.html">WORKS</a></li>
+          <li><a href="../skills/index.html">SKILLS</a></li>
+          <li><a href="../about/index.html">ABOUT</a></li>
         </ul>
       </nav>
       <div class="works_list">
         <div class="title_area">
           <h1 class="title_parts candal">WORKS</h1>
-          <p class="summary">クライアントワークや個人制作など、今までに制作したものを紹介します。</p>
+          <p  id="client_work" class="summary">クライアントワークや個人制作など、今までに制作したものを紹介します。</p>
         </div>
         <div class="contents_area">
           <div class="flex_box client_work">
-            <a href="#" class="image_area">
-              <div class="client_work_box">
-                <img src="../img/crient_work_001.png" alt="クライアントワークのイメージ写真です" class="works_image">
-              </div>
+            <a href="#" class="image_area client_work_box">
+              <img src="../img/crient_work_001.png" alt="クライアントワークのイメージ写真です" class="works_image">
             </a>
             <div class="detail_area">
               <h2 class="title_parts client_work_color"><small class="subtitle candal client_work_color">CLIENT WORK</small>ネイルサロン「Biene」WEBサイト構築</h2>
@@ -64,15 +62,13 @@
                 <li>#WordPress</li>
                 <li>#女性向け</li>
                 <li>#ネイルサロン</li>
-                <li>#スマホに不慣れでもわかりやすく</li>
+                <li id="private_work">#スマホに不慣れでもわかりやすく</li>
               </ul>
             </div>
           </div>
           <div class="flex_box private_work">
-            <a href="#" class="image_area">
-              <div class="private_work_box">
-                <img src="../img/private_work_001.png" alt="ひとつめの個人制作のイメージ写真です" class="works_image">
-              </div>
+            <a href="../port01/index.html" class="image_area private_work_box">
+              <img src="../img/private_work_001.png" alt="ひとつめの個人制作のイメージ写真です" class="works_image">
             </a>
             <div class="detail_area">
               <h2 class="title_parts private_work_color"><small class="subtitle candal private_work_color">PRIVATE WORK</small>読書に耽けるカフェ「Bücherwurm」</h2>
@@ -105,10 +101,8 @@
             </div>
           </div>
           <div class="flex_box private_work">
-            <a href="#" class="image_area">
-              <div class="private_work_box">
-                <img src="../img/private_work_002.png" alt="ひとつめの個人制作のイメージ写真です" class="works_image">
-              </div>
+            <a href="../port02/index.html" class="image_area private_work_box">
+              <img src="../img/private_work_002.png" alt="ふたつめの個人制作のイメージ写真です" class="works_image">
             </a>
             <div class="detail_area">
               <h2 class="title_parts private_work_color"><small class="subtitle candal private_work_color">PRIVATE WORK</small>既存サイトのリニューアル案件を想定した課題</h2>
@@ -138,18 +132,16 @@
               </ul>
             </div>
           </div>
-          <div class="flex_box private_work">
-            <a href="#" class="image_area">
-              <div class="private_work_box">
-                <img src="../img/private_work_003.png" alt="ひとつめの個人制作のイメージ写真です" class="works_image">
-              </div>
+          <div id="portfolio" class="flex_box private_work">
+            <a href="../index.html" class="image_area private_work_box">
+              <img src="../img/private_work_003.png" alt="最後の個人制作のイメージ写真です" class="works_image">
             </a>
             <div class="detail_area">
-              <h2 class="title_parts private_work_color"><small class="subtitle candal private_work_color">PRIVATE WORK</small>既存サイトのリニューアル案件を想定した課題</h2>
+              <h2 class="title_parts private_work_color"><small class="subtitle candal private_work_color">PRIVATE WORK</small>ポートフォリオサイト</h2>
               <ul class="detail">
                 <li>
                   <h3>制作期間</h3>
-                  <p>2週間(コンセプト検討〜デザイン、10日、コーディング2日)</p>
+                  <p>2週間(コンセプト検討〜デザイン、10日、コーディング4日)</p>
                 </li>
                 <li>
                   <h3>コンセプト</h3>
@@ -172,15 +164,13 @@
                 <li>#GitHub pages</li>
                 <li>#flexbox</li>
                 <li>#CSSアニメーション</li>
-                <li>#JQuery</li>
+                <li id="private_activity">#JQuery</li>
               </ul>
             </div>
           </div>
-          <div class="flex_box private_activity">
-            <a href="https://xd.adobe.com/embed/a1da3ec7-ab8e-4192-8037-2ef3208c9980" class="image_area">
-              <div class="private_activity_box">
-                <img src="../img/private_activity_001.png" alt="ひとつめの個人活動のイメージ写真です" class="works_image">
-              </div>
+          <div id="moshimo" class="flex_box private_activity">
+            <a href="https://xd.adobe.com/embed/a1da3ec7-ab8e-4192-8037-2ef3208c9980" class="image_area private_activity_box">
+              <img src="../img/private_activity_001.png" alt="ひとつめの個人活動のイメージ写真です" class="works_image">
             </a>
             <div class="detail_area">
               <h2 class="title_parts private_activity_color"><small class="subtitle candal private_activity_color">PRIVATE ACTIVITY</small>大塚製薬産学協同プロジェクト(仮)</h2>
@@ -210,11 +200,9 @@
               </ul>
             </div>
           </div>
-          <div class="flex_box private_activity">
-            <a href="https://www.behance.net/tsukiko53023f0" class="image_area">
-              <div class="private_activity_box">
-                <img src="../img/private_activity_002.png" alt="ひとつめの個人活動のイメージ写真です" class="works_image sp_image">
-              </div>
+          <div id="desinathon" class="flex_box private_activity">
+            <a href="https://www.behance.net/tsukiko53023f0" class="image_area private_activity_box">
+              <img src="../img/private_activity_002.png" alt="ふたつめの個人活動のイメージ写真です" class="works_image sp_image">
             </a>
             <div class="detail_area">
               <h2 class="title_parts private_activity_color"><small class="subtitle candal private_activity_color">PRIVATE ACTIVITY</small>【デザイナソン】Adobe XD meeting 08</h2>
@@ -239,18 +227,16 @@
               </ul>
               <ul class="keyword flex_box">
                 <li>#UI/UX</li>
-                <li>#産学協同</li>
-                <li>#ICカード決済</li>
-                <li>#ゲームで健康促進</li>
+                <li>#プロトタイプ</li>
+                <li>#ハッカソン</li>
+                <li>#Behance</li>
               </ul>
             </div>
           </div>
-          <div class="flex_box private_activity">
-            <a href="#" class="image_area">
-              <div class="private_activity_box">
-                <img src="../img/private_activity_003.png" alt="ひとつめの個人活動のイメージ写真です" class="works_image">
-              </div>
-            </a>
+          <div id="meishi"  class="flex_box private_activity">
+            <div class="image_area private_activity_box">
+              <img src="../img/private_activity_003.png" alt="みっつめの個人活動のイメージ写真です" class="works_image">
+            </div>
             <div class="detail_area">
               <h2 class="title_parts private_activity_color"><small class="subtitle candal private_activity_color">PRIVATE ACTIVITY</small>名刺作成</h2>
               <ul class="detail">
@@ -275,12 +261,10 @@
               </ul>
             </div>
           </div>
-          <div class="flex_box private_activity">
-            <a href="#" class="image_area">
-              <div class="private_activity_box image_area">
-                <img src="../img/private_activity_004_1.png" alt="最後の個人活動のイメージ写真です" class="works_image">
-              </div>
-            </a>
+          <div id="last_elemnt" class="flex_box private_activity">
+            <div class="image_area private_activity_box">
+              <img src="../img/private_activity_004.png" alt="最後の個人活動のイメージ写真です" class="works_image">
+            </div>
             <div class="detail_area">
               <h2 class="title_parts private_activity_color"><small class="subtitle candal private_activity_color">PRIVATE ACTIVITY</small>趣味のイラスト</h2>
               <ul class="detail">
@@ -308,48 +292,11 @@
       </div>
       <!-- JS記載エリア -->
       <script src="../js/jquery-3.3.1.min.js"></script>
-      <script src="../js/jquery.inview.min.js"></script>
       <script type="text/javascript">
-        $(function() {
-          $(".first_view>.scroll").addClass("scroll_none");
-          $(function() {
-            setTimeout('displayScroll()', 5500); //アニメーションを実行
-          });
-        });
-
-        function displayScroll() {
-          $(".first_view>.scroll").removeClass("scroll_none");
-          $(".first_view>.scroll").addClass("fade_down");
-        }
-      </script>
-      <script type="text/javascript">
-        $(function() {
-          $('#section_2').on('inview', function(event, isInView) {
-            if (isInView) {
-              //表示領域に入った時
-              $(this).addClass('fade_down');
-              console.log(this);
-            } else {
-              //表示領域から出た時
-              $(this).removeClass('fade_down');
-              $(this).css('opacity', 0); //非表示にしておく
-            }
-          });
-          $('#section_3').on('inview', function(event, isInView) {
-            if (isInView) {
-              $(this).addClass('fade_down');
-            } else {
-              $(this).removeClass('fade_down');
-            }
-          });
-          $('#section_4').on('inview', function(event, isInView) {
-            if (isInView) {
-              $(this).addClass('fade_down');
-            } else {
-              $(this).removeClass('fade_down');
-            }
-          });
-        });
+      $(window).on('load',function(){
+        $(".title_area").addClass("fade_in");
+        $(".contents_area").addClass("fade_in");
+      });
       </script>
 </body>
 
