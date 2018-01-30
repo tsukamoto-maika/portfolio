@@ -633,7 +633,7 @@ footer small {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .works_list .contents_area .flex_box .image_area, .works_list .contents_area .flex_box.image_area {
