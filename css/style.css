@@ -327,9 +327,9 @@ footer small {
   -webkit-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  animation-duration: 1.2s;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   visibility: visible !important;
@@ -601,8 +601,8 @@ footer small {
 }
 
 .fade_in {
-  animation: fadeIn 3s ease 0s 1 normal;
-  -webkit-animation: fadeIn 3s ease 0s 1 normal;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
 @keyframes fadeIn {
@@ -942,7 +942,7 @@ footer small {
 }
 
 .about .contents_area .image_area img {
-  width: 150px;
+  width: 250px;
 }
 
 .about .contents_area h2.title_parts {
@@ -955,6 +955,9 @@ footer small {
   margin-top: 8px;
 }
 
+.about .contents_area .biography h2.title_parts {
+  margin-top: 32px;
+}
 .about .contents_area .biography dl {
   margin-top: 40px;
   overflow: hidden;
@@ -1167,6 +1170,18 @@ footer small {
   height: 100px;
   position: absolute;
   background-color: #99856d;
+}
+.skillBar_Default {
+  width: 5%;
+  height: 50px;
+  position: absolute;
+  background-color: transparent;
+  transition: 3s;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .skillBar {

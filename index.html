@@ -233,7 +233,7 @@
   <script src="js/jquery.inview.min.js"></script>
   <script>
     new Vivus('canvas', {
-      duration: 300,
+      duration: 225,
       start: 'autostart',
       pathTimingFunction: Vivus.EASE_OUT,
     }, function(obj) {
@@ -244,10 +244,9 @@
     $(function() {
       $(".first_view>.scroll").addClass("scroll_none");
       $(function() {
-        setTimeout('displayScroll()', 5500); //アニメーションを実行
+        setTimeout('displayScroll()', 4100); //アニメーションを実行
       });
     });
-
     function displayScroll() {
       $(".first_view>.scroll").removeClass("scroll_none");
       $(".first_view>.scroll").addClass("fade_down");
